@@ -10,6 +10,7 @@
      margin: 0; padding: 0; box-sizing: border-box;
      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
+    /* ==========================main box ================== */
     .main_box{
        width: 100vw;
        height: 100vh;
@@ -19,6 +20,7 @@ background: linear-gradient(184deg, rgba(34,195,69,1) 44%, rgba(87,7,205,1) 100%
        position: relative;
        background-color: aliceblue;
     }
+    /* =====================main box end================== */
     .main_box fieldset{
        width:  400px;
        height: auto;
@@ -33,6 +35,7 @@ background: linear-gradient(184deg, rgba(34,195,69,1) 44%, rgba(87,7,205,1) 100%
        border-radius: 20px 0;
        transform: translate(-50%, -50%);
     }
+    /* =================media query========================== */
    @media screen and (max-width: 458px ) {
     .main_box fieldset{
        width: 100%;
@@ -93,6 +96,7 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 
       background: rgb(63,94,251);
       background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,0.76234243697479) 100%);
    }
+   /* ========================active ==================================================== */
    .main_box fieldset form button:active{
       background: rgb(238,174,202);
       background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(50,28,195,1) 100%);
@@ -104,8 +108,9 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 
     <fieldset >
        <legend>Contact From</legend>
        <form action="https://api.web3forms.com/submit" method="POST">
+         <!-- ===================hidden================================== -->
         <input type="hidden" name="access_key" value="b88cf79f-5049-4a54-8dc6-f5689ca86559">
-
+        <!-- --=====================hidden=============================== -->
         <input type="text" name="name" placeholder="enter name" required
         class="text_input"/><br>
         <input type="email" name="email" placeholder="enter email" required
